@@ -11,6 +11,9 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
+      - name: Instalar python3-venv
+        run: sudo apt install python3.14-venv -y
+
       - name: Criar ambiente virtual
         run: python3 -m venv venv
 
