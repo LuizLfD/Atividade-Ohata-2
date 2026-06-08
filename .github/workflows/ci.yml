@@ -8,7 +8,7 @@ on:
 
 jobs:
  test:
-  runs-on: ubuntu-latest #Runner gerenciado pelo GitHub
+  runs-on: self-hosted #Runner gerenciado pelo GitHub
 
   steps:
   - name: Checkout do código
