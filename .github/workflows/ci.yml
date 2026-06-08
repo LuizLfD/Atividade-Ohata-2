@@ -16,10 +16,10 @@ jobs:
 
   - name: Instalar Dependências
     run: |
-     python -m pip install --upgrade pip
-     pip install -r requirements.txt
+     python3 -m pip install --upgrade pip
+     pip3 install -r requirements.txt
 
   - name: Executar testes com pytest
     run: |
-     pytest test_calculadora.py -v --tb=short
+     python3 -m pytest test_calculadora.py -v --tb=short
 
